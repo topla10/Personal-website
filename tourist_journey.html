@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .wrapper {
+        border: 1px solid red;
+        width: 80%;
+        height: 100%;
+        display: grid;
+        gap: 1rem;
+      }
+      .box {
+        border: 1px solid black;
+      }
+
+      .one {
+        background-color: lightblue;
+        grid-row: span 2;
+      }
+      .two {
+        background-color: lightcoral;
+      }
+      .three {
+        background-color: aqua;
+      }
+      @media (min-width: 481px) {
+        .wrapper {
+          grid-template-columns: 3rem repeat(2, 1fr);
+        }
+        .wrapper div:last-child {
+          background-color: blueviolet;
+          grid-column-start: 2;
+          grid-column-end: 4;
+        }
+      }
+      @media (max-width: 480px) {
+        .wrapper {
+          grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+          grid-template-columns: 3rem 1fr 1fr;
+        }
+        .wrapper div:first-child {
+          background-color: gray;
+        }
+        .wrapper div:nth-child(2) {
+          grid-column: span 3;
+        }
+        .wrapper div:nth-child(3) {
+          grid-column: span 3;
+        }
+        .wrapper div:nth-child(4) {
+          grid-column: 2 / span 3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learning Grid</h1>
+    <div class="wrapper">
+      <div class="box one"></div>
+      <div class="box two">
+        <p>
+          Lorem ipsumdolor sit amet consectetur adipisicing elit. Similique
+          sapiente rerum modi, sequi et ut ducimus dolore laboriosam at, ad sint
+          culpa perspiciatis, laudantium dignissimos necessitatibus id aliquid
+          illum suscipit.
+        </p>
+      </div>
+      <div class="box three">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eum
+          fuga quisquam, officiis inventore esse est accusantium architecto
+          vitae quae ducimus beatae sed dolorum illum veritatis molestias at ea
+          accusamus. Consequuntur sed quam quos expedita maiores nobis fuga
+          deuam.
+        </p>
+      </div>
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
+          deleniti quasi aperiam vero laborum voluptatibus dolorum ratione.
+          Commodi, ex deleniti illum, est provident, labore saepe et rerum
+          laboriosam aliquam nam.
+        </p>
+      </div>
+      <div class="box fith">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sit
+          error, est ea assumenda vero labore modi pariatur voluptatem officiis
+          a numquam fugiat possimus laborum. Quos velit fugit ipsam aperiam?
+        </p>
+      </div>
+      <div class="box sixth">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+          asperiores iusto quod excepturi repellendus dicta dolorem neque?
+          Officiis totam aliquid laboriosam consequuntur possimus, minus est ab?
+          Distinctio rem vitae quos.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

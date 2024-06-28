@@ -1,0 +1,62 @@
+.autobiography {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 4rem 1fr;
+  justify-content: center;
+  margin: 2rem;
+  
+}
+
+.autobiography-child {
+  border: 1px solid red;
+}
+
+.my-name p {
+  border: 3px solid blue;
+  color: green;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+
+.myself-pic {
+  border: 1px solid green;
+  grid-column: 2 / 3;
+  margin: auto;
+}
+
+.autobio {
+  grid-column: 1 / span 3;
+}
+
+.missionary-pic {
+  grid-column: 1 / span 3;
+  margin: auto;
+}
+
+#missionary-myself-pic {
+  object-fit: contain;
+}
+
+.missionary {
+  grid-column: 1 / span 3;
+}
+
+.family-pic {
+  grid-column: span 3;
+}
+
+.myself-picture > .yoww {
+  border-radius: 50%;
+  border: 2px solid #333333;
+}
+
+/* CENTER THE 3 LAST IMAGES*/
+.family-picture-1 {
+  text-align: center;
+  margin: 1rem;
+}
+.family-picture-1 img {
+  border-radius: 5%;
+}
