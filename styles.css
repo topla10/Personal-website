@@ -33,7 +33,7 @@ img {
 #title {
   color: #fff;
 
-  margin: 4px;
+  margin: 0.2rem;
   text-align: center;
 }
 .fa-brands {
@@ -55,6 +55,7 @@ img {
 .fa-x-twitter:hover {
   background: black;
 }
+
 /* NAVIGATION LINKS*/
 #nav-bar {
   border: 1px solid blue;
