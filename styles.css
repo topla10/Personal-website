@@ -57,12 +57,12 @@ img {
 }
 
 /* NAVIGATION LINKS*/
-#nav-bar {
+nav#nav-bar {
   border: 1px solid blue;
   display: flex;
   justify-content: center;
 }
-#nav-bar ul {
+nav#nav-bar ul {
   border: 2px solid yellow;
   padding: 2rem;
 }
@@ -83,7 +83,7 @@ img {
   line-height: 3rem;
   text-transform: uppercase;
 }
-#nav-bar ul li a:hover {
+#nav-bar > ul > li a:hover {
   color: #fff;
   /*background-color: #333333;*/
 }
@@ -116,7 +116,7 @@ figcaption {
 }
 /*FOOTER*/
 
-#footer_section {
+footer#footer_section {
   background-color: #333333;
   color: #fff;
   border: 1px solid red;
@@ -124,46 +124,14 @@ figcaption {
   font-size: 0.6rem;
   padding: 2rem 0;
 }
-#footer_section a {
+footer#footer_section a {
   color: #fff;
   text-decoration: none;
 }
-#footer_section a:hover {
+footer#footer_section a:hover {
   color: #333333;
   background-color: #fff;
   padding: 0.2rem;
   border: 1px solid grey;
   border-radius: 5px;
-}
-
-/* ABOUT US STYLING
-
-NAVBAR-LINK*/
-
-#first-ul {
-  border: 1px solid green;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: end;
-  margin-right: 10px;
-}
-#first-ul li {
-  border: 1px solid #5f6769;
-  list-style-type: none;
-  border-radius: 0.2rem;
-  box-shadow: -2px 2px #5f6769;
-  margin: 0.2rem;
-}
-#first-ul li a {
-  border: 1px solid yellow;
-  background-color: #fcb045;
-  display: block;
-  padding: 0.3rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1rem;
-  color: #333333;
-}
-#first-ul li a:hover {
-  color: #fff;
 }
